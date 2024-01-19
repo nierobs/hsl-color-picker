@@ -1,5 +1,7 @@
 'use strict'
 
+const saveValue = (input) => localStorage.setItem(input.id, input.value)
+const getValue = (input) => localStorage.getItem(input.id)
 const preview = document.getElementById('preview')
 
 const hsl = [
@@ -17,40 +19,22 @@ const hsl = [
     }
 ]
 
-const storage = {
-    inputValue(key) {
-        return document.getElementById(key).value
-    },
-    get(key) {
-        return localStorage.getItem(key)
-    },
-    set(key) {
-        return localStorage.setItem(key, this.inputValue(key))
+const updateDOM = ({ input, span }) => {
+    span.textContent = input.value
+    preview.style.backgroundColor = `hsl(${hsl[0].input.value}, ${hsl[1].input.value}%, ${hsl[2].input.value}%)`
+}
+
+hsl.forEach((elements) => {
+    const { input, span } = elements;
+    const savedValue = parseInt(getValue(input))
+
+    if (savedValue >= 0) {
+        input.value = savedValue
+        updateDOM(elements)
     }
-}
 
-const updateDOM = (input, span) => {
-        span.textContent = input.value
-        preview.style.backgroundColor = `hsl(${hsl[0].input.value}, ${hsl[1].input.value}%, ${hsl[2].input.value}%)`
-}
-
-hsl.forEach((obj) => {
-    const { input, span } = obj;
     input.addEventListener('input', () => {
-        updateDOM(input, span)
-        storage.set(input.id)
-    })
-})
-
-// Read color data in the browser session and update DOM on page load
-window.addEventListener('load', () => {
-    hsl.forEach((obj) => {
-        const { input, span } = obj
-        const value = parseInt(storage.get(input.id))
-
-        if (value >= 0) {
-            input.value = value
-            updateDOM(input, span)
-        }
+        updateDOM(elements)
+        saveValue(input)
     })
 })
