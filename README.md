@@ -1,5 +1,5 @@
-# Minimalist, typography-focused HTML and CSS template
+# Simplified HSL color picker 
 
 **Author:** Robson Niemeyer  
-**Repository:** [https://github.com/nierobs/html-css](https://github.com/nierobs/html-css)  
-**Preview:** [https://coreteam.com.br/html-css](https://coreteam.com.br/html-css)
+**Repository:** [https://github.com/nierobs/hsl-color-picker](https://github.com/nierobs/hsl-color-picker)  
+**Preview:** [https://coreteam.com.br/hsl-color-picker](https://coreteam.com.br/hsl-color-picker)
