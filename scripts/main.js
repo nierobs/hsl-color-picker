@@ -26,21 +26,18 @@ const storage = {
     },
     set(key) {
         return localStorage.setItem(key, this.inputValue(key))
-    },
+    }
 }
 
-const updateColor = (span, value) => {
-        span.textContent = value
+const updateDOM = (input, span) => {
+        span.textContent = input.value
         preview.style.backgroundColor = `hsl(${hsl[0].input.value}, ${hsl[1].input.value}%, ${hsl[2].input.value}%)`
 }
 
 hsl.forEach((obj) => {
-    const { input, span } = obj
-
+    const { input, span } = obj;
     input.addEventListener('input', () => {
-        updateColor(span, input.value)
-
-        // Save color data in the browser session
+        updateDOM(input, span)
         storage.set(input.id)
     })
 })
@@ -49,9 +46,11 @@ hsl.forEach((obj) => {
 window.addEventListener('load', () => {
     hsl.forEach((obj) => {
         const { input, span } = obj
-        const value = storage.get(input.id)
+        const value = parseInt(storage.get(input.id))
 
-        input.value = value
-        updateColor(span, value)
+        if (value >= 0) {
+            input.value = value
+            updateDOM(input, span)
+        }
     })
 })
