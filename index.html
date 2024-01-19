@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Simplified HSL color picker - CoreTeam</title>
+        <meta name="description" content="Your description with up to 160 characters" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://coreteam.com.br/html-css" />
+        <link rel="preload" as="style" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="icon" href="https://coreteam.com.br/images/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="https://coreteam.com.br/images/apple-touch-icon.png" type="image/webp" />
+        <meta property="og:url" content="https://coreteam.com.br" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:title" content="Robson Niemeyer" />
+        <meta property="og:description" content="Simplified HSL color selection" />
+        <meta property="og:image" content="https://coreteam.com.br/images/open-graph.webp" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1080" />
+        <meta property="og:image:height" content="1080" />
+    </head>
+    <body>
+        <noscript>
+            <div class="alert">
+                <div class="container">
+                    <p class="center small">Oops! Your browser does not support JavaScript. Some page elements may not function properly.</p>
+                </div>
+            </div>
+        </noscript>
+        <div class="container">
+            <header>
+                <h1 class="center uppercase">Simplified HSL color picker</h1>
+            </header>
+            <main class="card">
+                <section>
+                    <div class="flex">
+                        <div class="flex-item">
+                            <label for="h-input">Hue</label>
+                            <input type="range" id="h-input" min="0" max="360" step="6" value="180" />
+                            <label for="s-input">Saturation</label>
+                            <input type="range" id="s-input" min="0" max="100" step="6.25" value="50" />
+                            <label for="l-input">Lightness</label>
+                            <input type="range" id="l-input" min="0" max="100" step="6.25" value="50" />
+                        </div>
+                        <div id="preview" class="flex-item">
+                            <p id="caption">hsl(<span id="h-span">180</span>, <span id="s-span">50</span>%, <span id="l-span">50</span>%)</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="center small">
+                <a href="https://github.com/nierobs/hsl-color-picker">Download from GitHub</a> &centerdot;
+                <a href="https://coreteam.com.br/en-us">About the author</a>
+            </footer>
+        </div>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
