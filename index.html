@@ -37,6 +37,9 @@
             <main class="card">
                 <section>
                     <div class="flex">
+                        <div id="preview" class="flex-item">
+                            <p id="caption">hsl(<span id="h-span">180</span>, <span id="s-span">50</span>%, <span id="l-span">50</span>%)</p>
+                        </div>
                         <div class="flex-item">
                             <label for="h-input">Hue</label>
                             <input type="range" id="h-input" min="0" max="360" step="6" value="180" />
@@ -44,9 +47,6 @@
                             <input type="range" id="s-input" min="0" max="100" step="6.25" value="50" />
                             <label for="l-input">Lightness</label>
                             <input type="range" id="l-input" min="0" max="100" step="6.25" value="50" />
-                        </div>
-                        <div id="preview" class="flex-item">
-                            <p id="caption">hsl(<span id="h-span">180</span>, <span id="s-span">50</span>%, <span id="l-span">50</span>%)</p>
                         </div>
                     </div>
                 </section>
