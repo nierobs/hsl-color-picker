@@ -1,40 +1,26 @@
 'use strict'
 
-const saveValue = (input) => localStorage.setItem(input.id, input.value)
-const getValue = (input) => localStorage.getItem(input.id)
-const preview = document.getElementById('preview')
+const color = document.getElementById('color')
+const caption = document.getElementById('caption')
+const inputs = document.getElementsByTagName('input')
 
-const hsl = [
-    {
-        input: document.getElementById('h-input'),
-        span: document.getElementById('h-span')
-    },
-    {
-        input: document.getElementById('s-input'),
-        span: document.getElementById('s-span')
-    },
-    {
-        input: document.getElementById('l-input'),
-        span: document.getElementById('l-span')
-    }
-]
+const updateDOM = () => {
+    const hsl = `hsl(${inputs[0].value}, ${inputs[1].value}%, ${inputs[2].value}%)`
 
-const updateDOM = ({ input, span }) => {
-    span.textContent = input.value
-    preview.style.backgroundColor = `hsl(${hsl[0].input.value}, ${hsl[1].input.value}%, ${hsl[2].input.value}%)`
+    color.style.backgroundColor = hsl
+    caption.textContent = hsl
 }
 
-hsl.forEach((elements) => {
-    const { input, span } = elements;
-    const savedValue = parseInt(getValue(input))
+for (let i = 0; i < inputs.length; i++) {
+    const { id } = inputs[i]
+    const savedValue = localStorage.getItem(id)
 
-    if (savedValue >= 0) {
-        input.value = savedValue
-        updateDOM(elements)
-    }
+    if (savedValue !== null) inputs[i].value = savedValue
 
-    input.addEventListener('input', () => {
-        updateDOM(elements)
-        saveValue(input)
+    inputs[i].addEventListener('input', () => {
+        updateDOM()
+        localStorage.setItem(id, inputs[i].value)
     })
-})
+}
+
+updateDOM()
