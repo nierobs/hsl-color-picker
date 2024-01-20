@@ -132,7 +132,7 @@ label,
 
 #color {
     align-items: center;
-    background-color: hsl(180, 50%, 50%);
+    background-color: hsl(222, 31.25%, 43.75%);
     border: v.$border;
     border-radius: v.$border-radius;
     display: flex;
@@ -144,8 +144,7 @@ label,
     color: #fff;
     font-weight: 800;
     line-height: 1;
-    margin-bottom: 0;
-    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    text-shadow: -0.0625rem 0 #000, 0 0.0625rem #000, 0.0625rem 0 #000, 0 -0.0625rem #000;
 }
 
 input {
