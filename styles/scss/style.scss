@@ -1,15 +1,6 @@
 @use "sass:string";
 @use "variables" as v;
 
-@font-face {
-    font-display: swap;
-    font-family: "Open Sans";
-    font-stretch: 75% 100%;
-    font-style: normal;
-    font-weight: 300 800;
-    src: local(Open Sans), url(../fonts/OpenSans-VariableFont_wdth,wght.ttf) format(truetype) tech(variations);
-}
-
 @keyframes fade-in {
     from { opacity: 0 }
     to { opacity: 1 }
@@ -37,7 +28,7 @@ body {
     animation: fade-in 0.99s ease-out forwards 0.33s;
     background-color: v.$background-primary;
     color: v.$color-text-primary;
-    font: 400 1rem string.unquote("/") v.$line-height-primary v.$font-family-primary;
+    font: 400 1rem string.unquote("/") v.$line-height-primary sans-serif;
     min-height: 100%;
     opacity: 0;
     text-rendering: optimizeLegibility;
