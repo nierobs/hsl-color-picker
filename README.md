@@ -1,5 +1,4 @@
-# Simplified HSL color picker 
+# Simplified HSL Color Picker 
 
 **Author:** Robson Niemeyer  
-**Repository:** [https://github.com/nierobs/hsl-color-picker](https://github.com/nierobs/hsl-color-picker)  
-**Preview:** [https://coreteam.com.br/hsl-color-picker](https://coreteam.com.br/hsl-color-picker)
+**Repository:** [https://github.com/nierobs/simplified-hsl-color-picker](https://github.com/nierobs/simplified-hsl-color-picker)

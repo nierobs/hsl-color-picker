@@ -1,0 +1,39 @@
+.flex {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+#color {
+    align-items: center;
+    background-color: hsl(168, 37.5%, 50%);
+    border: 1px solid hsl(234, 17.1875%, 81.25%);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    min-height: 8rem;
+}
+
+#caption {
+    color: #fff;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: -0.0625rem 0 #000, 0 0.0625rem #000, 0.0625rem 0 #000, 0 -0.0625rem #000;
+}
+
+input {
+    display: block;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+    .flex {
+        flex-direction: row;
+    }
+}

@@ -3,24 +3,25 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Simplified HSL color picker - CoreTeam</title>
-        <meta name="description" content="Easily select colors for your new design project" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://nierobs.github.io/hsl-color-picker" />
-        <link rel="preload" as="font" href="fonts/OpenSans-VariableFont_wdth,wght.ttf" type="font/ttf" crossorigin />
-        <link rel="preload" as="style" href="styles/css/style.css" />
-        <link rel="stylesheet" href="styles/css/style.css" />
+        <link rel="canonical" href="https://nierobs.github.io/simplified-hsl-color-picker" />
+        <title>Simplified HSL Color Picker</title>
+        <meta name="description" content="Easily select colors for your new design project" />
+        <link rel="preload" as="style" href="https://nierobs.github.io/html-css-starter-template/styles/style.css" />
+        <link rel="preload" as="style" href="./styles/style.css" />
+        <link rel="stylesheet" href="https://nierobs.github.io/html-css-starter-template/styles/style.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
         <link rel="icon" href="https://nierobs.github.io/images/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="https://nierobs.github.io/images/apple-touch-icon.png" type="image/webp" />
-        <meta property="og:url" content="https://nierobs.github.io/hsl-color-picker" />
-        <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:title" content="Robson Niemeyer" />
         <meta property="og:description" content="Simplified HSL color picker" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://nierobs.github.io/simplified-hsl-color-picker" />
         <meta property="og:image" content="https://nierobs.github.io/images/open-graph.webp" />
         <meta property="og:image:type" content="image/webp" />
-        <meta property="og:image:width" content="1080" />
-        <meta property="og:image:height" content="1080" />
+        <meta property="og:image:width" content="640" />
+        <meta property="og:image:height" content="640" />
     </head>
     <body>
         <noscript>
@@ -37,25 +38,23 @@
             <main class="card">
                 <section>
                     <div class="flex">
-                        <div id="color" class="flex-item">
-                            <span id="caption">hsl(165, 37.5%, 50%)</span>
-                        </div>
+                        <div id="color" class="flex-item"><span id="caption">hsl(165, 37.5%, 50%)</span></div>
                         <div class="flex-item">
                             <label for="h">Hue</label>
                             <input id="h" type="range" min="0" max="360" step="15" value="165" />
                             <label for="s">Saturation</label>
-                            <input id="s" type="range" min="0" max="100" step="3.125" value="37.5" />
+                            <input id="s" type="range" min="0" max="100" step="1.5625" value="37.5" />
                             <label for="l">Lightness</label>
-                            <input id="l" type="range" min="0" max="100" step="3.125" value="50" />
+                            <input id="l" type="range" min="0" max="100" step="1.5625" value="50" />
                         </div>
                     </div>
                 </section>
             </main>
             <footer class="center small">
-                <a href="https://github.com/nierobs/hsl-color-picker">Download from GitHub</a> &centerdot;
-                <a href="https://nierobs.github.io">Return to home page</a>
+                <a href="https://nierobs.github.io">Author's web page</a> &centerdot;
+                <a href="https://github.com/nierobs/simplified-hsl-color-picker">GitHub repository</a>
             </footer>
         </div>
-        <script src="scripts/main.js"></script>
+        <script src="./scripts/main.js"></script>
     </body>
 </html>
