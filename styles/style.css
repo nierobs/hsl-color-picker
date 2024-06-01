@@ -13,7 +13,7 @@
     align-items: center;
     background-color: hsl(168, 37.5%, 50%);
     border: 1px solid var(--bdc);
-    border-radius: 0.5rem;
+    border-radius: var(--bdrs);
     display: flex;
     justify-content: center;
     min-height: 8rem;
