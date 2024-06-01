@@ -11,7 +11,7 @@
 
 #color {
     align-items: center;
-    background-color: hsl(168, 37.5%, 50%);
+    background-color: hsl(30, 84.375%, 46.875%);
     border: 1px solid var(--bdc);
     border-radius: var(--bdrs);
     display: flex;
@@ -26,10 +26,35 @@
     text-shadow: -0.0625rem 0 #000, 0 0.0625rem #000, 0.0625rem 0 #000, 0 -0.0625rem #000;
 }
 
-input {
+input[type="range"] {
+    -webkit-appearance: none;
+    background: var(--bdc);
     display: block;
+    height: 1px;
     margin: 1rem 0;
+    outline: none;
+    -webkit-transition: 250ms;
     width: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb {
+    background-color: var(--c__link);
+    border-width: 0;
+    cursor: pointer;
+    height: 1rem;
+    transition: background-color 250ms;
+    width: 1rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb,
+input[type="range"]:hover::-moz-range-thumb {
+    background-color: var(--c__link-hover);
 }
 
 @media only screen and (min-width: 768px) {
