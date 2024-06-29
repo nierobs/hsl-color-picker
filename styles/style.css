@@ -11,7 +11,7 @@
 
 #color {
     align-items: center;
-    background-color: hsl(240, 20%, 20%);
+    background-color: hsl(240, 36%, 36%);
     border: 1px solid var(--border);
     border-radius: 0.5rem;
     display: flex;

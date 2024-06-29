@@ -15,8 +15,8 @@ const storeValue = (input) => {
     localStorage.setItem(input.id, input.value);
 }
 
-const getRandomH = () => Math.floor(Math.random() * 24) * 15;
-const getRandomSL = () => Math.floor(Math.random() * 24) * 4 + 4;
+const getRandomH = () => Math.floor(Math.random() * 25) * 15;
+const getRandomSL = () => Math.floor(Math.random() * 25) * 4 + 4;
 
 const randomColor = () => {
     inputs[0].value = getRandomH();
