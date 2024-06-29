@@ -38,8 +38,7 @@ window.addEventListener('load', () => {
 
         inputs[i].addEventListener('input', () => storeValue(inputs[i]));
     }
+    updateDOM();
 
     document.getElementById('random').addEventListener('click', () => randomColor());
-
-    updateDOM();
 });
