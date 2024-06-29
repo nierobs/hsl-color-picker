@@ -36,7 +36,10 @@ window.addEventListener('load', () => {
 
         if (item !== null) inputs[i].value = item;
 
-        inputs[i].addEventListener('input', () => storeValue(inputs[i]));
+        inputs[i].addEventListener('input', () => {
+            storeValue(inputs[i])
+            updateDOM();
+        });
     }
     updateDOM();
 
