@@ -11,8 +11,8 @@
 
 #color {
     align-items: center;
-    background-color: hsl(180, 50%, 50%);
-    border: 1px solid hsl(240, 12.5%, 87.5%);
+    background-color: hsl(180, 52%, 52%);
+    border: 1px solid var(--border);
     border-radius: 0.5rem;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@
 
 input[type="range"] {
     -webkit-appearance: none;
-    background: hsl(240, 12.5%, 87.5%);
+    background: var(--border);
     display: block;
     height: 1px;
     margin: 1rem 0;
@@ -43,7 +43,7 @@ input[type="range"]::-moz-range-thumb {
     border-width: 0;
     cursor: pointer;
     height: 1rem;
-    transition: background-color 250ms;
+    transition: background-color var(--body__ln-trs);
     width: 1rem;
 }
 
