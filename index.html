@@ -26,35 +26,37 @@
     <body>
         <noscript>
             <div class="alert">
-                <div class="container">
-                    <p class="center small">Oops! Your browser does not support JavaScript. Some page elements may not function properly.</p>
+                <div class="container center small">
+                    <span>Oops! Your browser does not support JavaScript. Some page elements may not function properly.</span>
                 </div>
             </div>
         </noscript>
-        <div class="container">
-            <header>
-                <h1 class="center uppercase">Simplified HSL Color Picker</h1>
-            </header>
-            <main class="card">
-                <section>
-                    <div class="flex">
-                        <div id="color" class="flex-item"><span id="caption">hsl(30, 84.375%, 46.875%)</span></div>
-                        <div class="flex-item">
-                            <label for="h">Hue</label>
-                            <input id="h" type="range" min="0" max="360" step="15" value="30" />
-                            <label for="s">Saturation</label>
-                            <input id="s" type="range" min="0" max="100" step="1.5625" value="84.375" />
-                            <label for="l">Lightness</label>
-                            <input id="l" type="range" min="0" max="100" step="1.5625" value="46.875" />
-                        </div>
+        <header>
+            <div class="container center">
+                <h1>Simplified HSL Color Picker</h1>
+            </div>
+        </header>
+        <main>
+            <section class="container">
+                <div class="card flex">
+                    <div id="color" class="flex-item"><span id="caption">hsl(30, 84.375%, 46.875%)</span></div>
+                    <div class="flex-item">
+                        <label for="h">Hue</label>
+                        <input id="h" type="range" min="0" max="360" step="15" value="30" />
+                        <label for="s">Saturation</label>
+                        <input id="s" type="range" min="0" max="100" step="1.5625" value="84.375" />
+                        <label for="l">Lightness</label>
+                        <input id="l" type="range" min="0" max="100" step="1.5625" value="46.875" />
                     </div>
-                </section>
-            </main>
-            <footer class="center small">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container center small">
                 <a href="https://nierobs.github.io">Author's web page</a> &centerdot;
                 <a href="https://github.com/nierobs/simplified-hsl-color-picker">GitHub repository</a>
-            </footer>
-        </div>
+            </div>
+        </footer>
         <script src="./scripts/main.js"></script>
     </body>
 </html>
