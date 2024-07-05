@@ -16,13 +16,10 @@ main {
 }
 
 #preview {
-  align-items: center;
   background-color: hsl(240, 36%, 36%);
   border: var.$border var.$borderColor;
   border-radius: var.$borderRadius;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 56.45%;
+  padding-bottom: 66.666667%;
   position: relative;
   user-select: all;
 }
