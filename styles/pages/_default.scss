@@ -21,6 +21,7 @@ main {
   border-radius: var.$borderRadius;
   padding-bottom: 50%;
   position: relative;
+  transition: all 250ms ease-out;
   user-select: all;
 }
 
