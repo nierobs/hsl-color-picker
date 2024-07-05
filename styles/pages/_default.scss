@@ -31,8 +31,10 @@ main {
   right: 50%;
   position: absolute;
   text-shadow: -0.0625rem 0 var.$dark, 0 0.0625rem var.$dark, 0.0625rem 0 var.$dark, 0 -0.0625rem var.$dark;
+  text-align: center;
   top: 50%;
-  transform: translate(50%, -50%)
+  transform: translate(50%, -50%);
+  width: 100%;
 }
 
 #controls {
