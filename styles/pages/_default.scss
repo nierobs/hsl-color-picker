@@ -19,7 +19,7 @@ main {
   background-color: hsl(240, 36%, 36%);
   border: var.$border var.$borderColor;
   border-radius: var.$borderRadius;
-  padding-bottom: 66.666667%;
+  padding-bottom: 50%;
   position: relative;
   user-select: all;
 }
@@ -51,7 +51,7 @@ main {
     background: var.$borderColor;
     display: block;
     height: 1px;
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 0.5rem;
     outline: none;
     width: 100%;
   }
@@ -74,6 +74,8 @@ main {
 
 @mixin defaultMedium {
   .grid {
+    gap: 2rem 1rem;
+
     & > div:nth-child(odd) {
       grid-column: 1 / 7;
     }
@@ -83,7 +85,9 @@ main {
     }
   }
 
-  .button {
+ 
+.button {
+    margin-top: 1rem;
     width: 100%;
   }
 }
