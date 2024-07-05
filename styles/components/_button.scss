@@ -1,0 +1,39 @@
+@use "../abstracts" as var;
+
+.button {
+  align-items: center;
+  background: linear-gradient(105deg, var.$button 14.814814%, lighten(var.$button, 8%) 18.518518%, var.$button 22.222222%, var.$button 61.111111%, lighten(var.$button, 8%) 64.814814%, lighten(var.$button, 4%) 68.518518%, lighten(var.$button, 8%) 72.222222%, var.$button 75.925925%) left / 200%;
+  border-radius: var.$borderRadius;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  filter: var.$shadow;
+  font-family: var.$sansSerif;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: var.$letterSpacing;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 500ms ease-out;
+  width: 100%;
+
+  &:hover {
+    color: #fff;
+    background-position: right;
+  }
+
+  &__image {
+    fill: currentcolor;
+    height: 1rem;
+    margin-right: 0.5rem;
+    width: auto;
+  }
+}
+
+@mixin buttonMedium {
+  .button {
+    padding: 1rem 2rem;
+    width: auto;
+  }
+}

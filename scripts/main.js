@@ -1,6 +1,6 @@
 'use strict'
 
-const color = document.getElementById('color');
+const color = document.getElementById('preview');
 const caption = document.getElementById('caption');
 const inputs = document.getElementsByTagName('input'); 
 
