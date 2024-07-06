@@ -12,17 +12,16 @@
     padding-top: 2rem;
   }
 
-  &__subtitle,
-  &__subtitle:any-link {
+  &__brand,
+  &__brand:any-link {
     align-items: center;
-    color: #fff;
+    color: lighten(var.$gold, 12%);
     display: flex;
-    font: 400 var.$subtitle string.unquote("/") 1.27202 var.$cursive;
     gap: 0 0.5rem;
     justify-content: center;
 
     &:hover {
-      color: #fff;
+    color: lighten(var.$gold, 24%);
     }
   }
 
@@ -32,5 +31,9 @@
     height: var.$h2;
     margin-bottom: 0.25rem;
     width: auto;
+  }
+
+  &__text {
+    font: 400 var.$subtitle string.unquote("/") 1.27202 var.$cursive;
   }
 }
