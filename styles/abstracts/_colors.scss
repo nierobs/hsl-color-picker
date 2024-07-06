@@ -6,7 +6,7 @@ $golden: hsl(45, 60%, 44%);
 $link: hsl(210, 80%, 48%);
 $linkHover: lighten($link, 12%);
 
-$button: $link;
+$button: $brand;
 $buttonHover: lighten($button, 12%);
 
 $borderColor: hsl(240, 20%, 84%);
