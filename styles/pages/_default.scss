@@ -67,11 +67,11 @@
     gap: 2rem 1rem;
 
     & > div:nth-child(odd) {
-      grid-column: 1 / 7;
+      grid-column: 2 / 7;
     }
 
     & > div:nth-child(even) {
-      grid-column: 7 / 13;
+      grid-column: 7 / 12;
     }
   }
 
