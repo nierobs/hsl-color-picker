@@ -59,36 +59,3 @@
     background: var.$buttonHover;
   }
 }
-
-@mixin smallScreen {}
-
-@mixin mediumScreen {
-  .grid {
-    gap: 2rem 1rem;
-
-    & > div:nth-child(odd) {
-      grid-column: 2 / 7;
-    }
-
-    & > div:nth-child(even) {
-      grid-column: 7 / 12;
-    }
-  }
-
-.button {
-    margin-top: 1rem;
-    width: 100%;
-  }
-}
-
-@mixin largeScreen {
-  .grid {
-    & > div:nth-child(odd) {
-      grid-column: 3 / 7;
-    }
-
-    & > div:nth-child(even) {
-      grid-column: 7 / 11;
-    }
-  }
-}

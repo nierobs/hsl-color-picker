@@ -1,0 +1,58 @@
+#preview {
+  background-color: hsl(0, 4%, 4%);
+  border: 1px solid hsl(240, 20%, 84%);
+  border-radius: 0.5rem;
+  padding-bottom: 50%;
+  position: relative;
+  transition: all 250ms ease-out;
+  user-select: all;
+}
+
+#caption {
+  color: #fff;
+  font-weight: 800;
+  right: 50%;
+  position: absolute;
+  text-shadow: -0.0625rem 0 hsl(240, 20%, 16%), 0 0.0625rem hsl(240, 20%, 16%), 0.0625rem 0 hsl(240, 20%, 16%), 0 -0.0625rem hsl(240, 20%, 16%);
+  text-align: center;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 100%;
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.controls__user {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.controls__user input[type=range] {
+  -webkit-appearance: none;
+  background: hsl(240, 20%, 84%);
+  display: block;
+  height: 1px;
+  margin: 1.5rem 0 0.5rem;
+  outline: none;
+  width: 100%;
+}
+.controls__user input[type=range]::-webkit-slider-thumb,
+.controls__user input[type=range]::-moz-range-thumb {
+  background: hsl(150, 44%, 24%);
+  border-width: 0;
+  cursor: pointer;
+  height: 1rem;
+  transition: all 250ms ease-out;
+  width: 1rem;
+}
+.controls__user input[type=range]:hover::-webkit-slider-thumb,
+.controls__user input[type=range]:hover::-moz-range-thumb {
+  background: #33845c;
+}
+
+/*# sourceMappingURL=styles.css.map */
