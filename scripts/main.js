@@ -1,14 +1,13 @@
 'use strict'
 
-const color = document.getElementById('preview');
-const caption = document.getElementById('caption');
+const preview = document.getElementById('preview');
 const inputs = document.getElementsByTagName('input'); 
 
 const updateDOM = () => {
     const hsl = `hsl(${inputs[0].value}, ${inputs[1].value}%, ${inputs[2].value}%)`;
 
-    color.style.backgroundColor = hsl;
-    caption.textContent = hsl;
+    preview.style.backgroundColor = hsl;
+    preview.textContent = hsl;
 };
 
 const storeValue = (input) => {

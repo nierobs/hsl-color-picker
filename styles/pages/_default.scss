@@ -2,60 +2,25 @@
 
 #preview {
   background-color: hsl(0, 4%, 4%);
-  border: 1px solid var.$borderColor;
-  border-radius: var.$borderRadius;
-  padding-bottom: 50%;
-  position: relative;
-  transition: all 250ms ease-out;
-  user-select: all;
-}
-
-#caption {
-  color: #fff;
+  border: 1px solid var.$border-color;
+  border-radius: var.$border-radius;
+  color: var.$white;
   font-weight: 800;
-  right: 50%;
-  position: absolute;
-  text-shadow: -0.0625rem 0 var.$dark, 0 0.0625rem var.$dark, 0.0625rem 0 var.$dark, 0 -0.0625rem var.$dark;
+  min-height: 240px;
   text-align: center;
-  top: 50%;
-  transform: translate(50%, -50%);
-  width: 100%;
+  text-shadow: -0.0625rem 0 var.$dark, 0 0.0625rem var.$dark, 0.0625rem 0 var.$dark, 0 -0.0625rem var.$dark;
+  transition: var.$transition;
+  user-select: text;
 }
 
 #controls {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  justify-content: space-between;
+  .button {
+    margin-top: 1rem;
+  }
 }
 
-.controls__user {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-  input[type="range"] {
-    -webkit-appearance: none;
-    background: var.$borderColor;
-    display: block;
-    height: 1px;
-    margin: 1.5rem 0 0.5rem;
-    outline: none;
-    width: 100%;
-  }
-
-  input[type="range"]::-webkit-slider-thumb,
-  input[type="range"]::-moz-range-thumb {
-    background: var.$button;
-    border-width: 0;
-    cursor: pointer;
-    height: 1rem;
-    transition: var.$transition;
-    width: 1rem;
-  }
-
-  input[type="range"]:hover::-webkit-slider-thumb,
-  input[type="range"]:hover::-moz-range-thumb {
-    background: var.$buttonHover;
+@mixin medium {
+  #preview {
+    height: 100%;
   }
 }

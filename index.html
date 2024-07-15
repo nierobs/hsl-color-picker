@@ -39,21 +39,19 @@
         <main>
             <section id="color-picker" class="section">
                 <div class="container grid grid--col-2">
-                    <div id="preview"><div id="caption">hsl(0, 4%, 4%)</div></div>
-                    <div id="controls">
-                        <div class="controls__user">
-                            <div>
-                                <label for="h">Hue</label>
-                                <input id="h" type="range" min="6" max="348" step="18" value="0" />
-                            </div>
-                            <div>
-                                <label for="s">Saturation</label>
-                                <input id="s" type="range" min="5" max="100" step="5" value="5" />
-                            </div>
-                            <div>
-                                <label for="l">Lightness</label>
-                                <input id="l" type="range" min="5" max="100" step="5" value="5" />
-                            </div>
+                    <div class="flex flex--center" id="preview">hsl(0, 4%, 4%)</div>
+                    <div class="flex flex--col" id="controls">
+                        <div class="input">
+                            <label class="input__label" for="h">Hue</label>
+                            <input class="input__field" id="h" type="range" min="6" max="348" step="18" value="0" />
+                        </div>
+                        <div class="input">
+                            <label class="input__label" for="s">Saturation</label>
+                            <input class="input__field" id="s" type="range" min="5" max="100" step="5" value="5" />
+                        </div>
+                        <div class="input">
+                            <label class="input__label" for="l">Lightness</label>
+                            <input class="input__field" id="l" type="range" min="5" max="100" step="5" value="5" />
                         </div>
                         <button id="random" class="button">Random Color</button>
                     </div>
