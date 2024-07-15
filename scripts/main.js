@@ -4,7 +4,7 @@ const preview = document.getElementById('preview');
 const inputs = document.getElementsByTagName('input'); 
 
 const updateDOM = () => {
-    const hsl = `hsl(${inputs[0].value}, ${inputs[1].value}%, ${inputs[2].value}%)`;
+    const hsl = `hsl(${inputs[0].value} ${inputs[1].value}% ${inputs[2].value}%)`;
 
     preview.style.backgroundColor = hsl;
     preview.textContent = hsl;
